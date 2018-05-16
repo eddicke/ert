@@ -113,6 +113,7 @@
 
     <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
     <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src = "https://rawgit.com/eddicke/chat-example/master/dist/palmfronds.js"></script>
     <script src="dist/gui.js"></script>
     
     <script>
@@ -122,10 +123,7 @@
         var gui = document.createElement("script")
         gui.src = "https://gitcdn.xyz/repo/eddicke/chat-example/master/dist/gui.js";
         document.body.appendChild(gui);
-	    
-	var grass = document.createElement("script")
-	grass.src = "https://rawgit.com/eddicke/chat-example/master/dist/palmfronds.js"
-	document.body.appendChild(grass);
+	
 
         $(function() {
             var socket = io();
@@ -232,9 +230,7 @@
                 skybox.material = skyMaterial;
 		    
 		//LET'S LOAD THE PALMFRONDS-----------------------------------------------><-----------------------------------
-		    grass.onload = function(){
  			var palmfrond = new createPalmfrond(scene)
-			}
 		//////////////////-----------------------------------------------------><-------------------------
                 var nitro = 1
                 //PSEUDO-IMPOSTOR--------------------------><-----------------------------
